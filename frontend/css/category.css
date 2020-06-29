@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: montserrat;
+    box-sizing: border-box;
+}
+#myChart{
+    width: 1140 !important;
+    height: 500px !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    /* background: #dae9eb; */
+    background-image: linear-gradient(160deg, #ffffff, #e0e0e0);
+}
+
+/* HEADER */
+.header{
+    padding-top: 40px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #333333;
+    margin-bottom: 20px;
+}
+
+/* CHART */
+.chart{
+    margin-bottom: 40px;
+}
+
+/* Repositories */
+
+.name-product{
+    border-right: 1px solid #333333;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    top:0;
+}
+.name-product h4{
+    display: inline-block;
+}
+.name-product a{
+    float: right;
+}
+.search{
+    padding: 20px 0px;
+}
+
+/* Product */
+
+
+.categori{
+    display: inline-block;
+    padding: 0px 12px;
+    margin: 12px 12px 12px 0px;
+}
+
+.project h4{
+    display: flex;
+}
+.selector{
+    margin-bottom: 20px;
+}
+.product{
+    padding: 10px 15px 10px 10px;
+    background-color: rgb(247, 247, 247);
+    margin: 4px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    /* background: #d3d2d2; */
+}
+.product a{
+    color: black !important;
+    border: 2px solid orange;
+    padding: 1px 4px !important;
+    font-size: 20px;
+    text-transform: capitalize;
+    float: right;
+}
+.delete{
+    float: left !important;
+    border: 2px solid tomato !important;
+}
+.product img{
+    border-radius: 4px;
+    float: right;
+}
+.product h2,h3,h5,h6{
+    text-transform: capitalize;
+}
+.product h3,h5,h6{
+    text-align: center;
+}
+.product p{
+    color: rgb(170, 167, 167);
+    text-align: center;
+}
+.product h5,h6{
+    color: tomato;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 30px;
+}
+/* BACK TO TOP BUTTON */
+
+.on_top {
+    opacity: 0.6;
+    display: block;
+}
+
+.on_top:hover {
+    background-color: #007bb6;
+    color: #fff;
+    border: 1px solid #007bb6;
+    opacity: 1;
+}
+
+.on_top i {
+    font-size: 20px;
+}
+
+.on_top {
+    border-radius: 30%;
+    background-color: #e42222;
+    padding: 10px 10px;
+    white-space: nowrap;
+    color: #fff;
+    position: fixed;
+    bottom: 75px;
+    right: 30px;
+    height: 44px;
+}
+

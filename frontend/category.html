@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/category.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+<!-- 0163 892 5398 -->
+
+<body>
+    <section>
+        <div class="container">
+            <div class="header">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <a href="home.html" class="btn btn-outline-secondary"><i class="fas fa-arrow-left"></i> Back to
+                            Home Page</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="index.html" type="button" class="btn btn-outline-secondary">Sign out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="chart">
+                <h3>biểu đổ hiển thị số lượng sản phẩm được bán trong thời gian vừa qua</h3>
+                <canvas id="myChart"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Purple', 'Orange', 'Purple', 'Orange', 11, 12, 14, 15, 13],
+                            datasets: [{
+                                label: '# of Votes',
+                                data: [12, 19, 3, 5, 12, 3, 22, 20, 12, 12, 12, 12, 3, 4, 15],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)',
+                                    'rgba(255, 159, 64, 0.4)',
+                                    'rgba(255, 159, 64, 0.6)',
+                                    'rgba(255, 159, 64, 0.8)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)',
+                                    'rgba(255, 159, 64, 0.4)',
+                                    'rgba(255, 159, 64, 0.6)',
+                                    'rgba(255, 159, 64, 0.8)'
+                                ],
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)',
+                                    'rgba(255, 159, 64, 0.2)',
+                                    'rgba(255, 159, 64, 0.4)',
+                                    'rgba(255, 159, 64, 0.6)',
+                                    'rgba(255, 159, 64, 0.8)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)',
+                                    'rgba(255, 159, 64, 0.4)',
+                                    'rgba(255, 159, 64, 0.6)',
+                                    'rgba(255, 159, 64, 0.8)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero: true
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                </script>
+            </div>
+            <div class="section-1">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="name-product">
+                            <h4>Repositories</h4>
+                            <a href="newProduct.html" type="button" class="btn btn-info">New</a>
+                            <br>
+                            <div class="search">
+                                <input class="form-control form-control-sm" type="text" placeholder="tìm kiếm">
+                            </div>
+                            <div class="project">
+                                <h4><a href="#">tên - 20</a></h4>
+                                <h4><a href="#">tên sả - 12</a></h4>
+                                <h4><a href="#">tên sản phẩm - 33</a></h4>
+                                <h4><a href="#">tên sản phẩm - 44</a></h4>
+                                <h4><a href="#">tên sản phẩm - 2550</a></h4>
+                                <h4><a href="#">tên sản phẩm - 260</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h3>Products</h3>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="selector">
+                                    <select class="custom-select">
+                                        <!-- <option selected>Open this select menu</option> -->
+                                        <option value="1">sort by price</option>
+                                        <option value="2">sort by quantity </option>
+                                        <option value="3">sort by Products sold</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="product">
+                                <h2>name of product</h2>
+                                <!-- <img class="align-self-center mr-3" src="./css/image/200.jpg"> -->
+                                <h3>giá: 400$</h3>
+                                <h5>còn lại: 123</h5>
+                                <h6>đã bán: 12</h6>
+                                <a href="change.html" class="btn btn-outline-warning">sửa</a>
+                                <a href="change.html" class="btn btn-outline-danger delete">xóa</a>
+                            </div>
+                            <!-- <div class="product">
+                                <h2>name of product</h2>
+                                <img class="align-self-center mr-3" src="./css/image/200.jpg">
+                                <h3>giá: 400$</h3>
+                                <h5>còn lại: 123</h5>
+                                <h6>đã bán: 12</h6>
+                                <a href="" class="btn btn-outline-warning">sửa</a>
+                                <a href="change.html" class="btn btn-outline-danger delete">xóa</a>
+                            </div> -->
+                            <!-- <div class="product">
+                                <h2>name of product</h2>
+                                <img class="align-self-center mr-3" src="./css/image/200.jpg">
+                                <h3>giá: 400$</h3>
+                                <h5>còn lại: 123</h5>
+                                <h6>đã bán: 12</h6>
+                                <a href="" class="btn btn-outline-warning">sửa</a>
+                                <a href="change.html" class="btn btn-outline-danger delete">xóa</a>
+                            </div> -->
+                            <div class="product">
+                                <h2>name of product</h2>
+                                <img class="align-self-center mr-3" src="./css/image/200.jpg">
+                                <h3>giá: 400$</h3>
+                                <h5>còn lại: 123</h5>
+                                <h6>đã bán: 12</h6>
+                                <a href="" class="btn btn-outline-warning">sửa</a>
+                                <a href="change.html" class="btn btn-outline-danger delete">xóa</a>
+                            </div>
+                            <div class="product">
+                                <h2>name of product</h2>
+                                <img class="align-self-center mr-3" src="./css/image/200.jpg">
+                                <h3>giá: 400$</h3>
+                                <h5>còn lại: 123</h5>
+                                <h6>đã bán: 12</h6>
+                                <a href="" class="btn btn-outline-warning">sửa</a>
+                                <a href="change.html" class="btn btn-outline-danger delete">xóa</a>
+                            </div>
+                            <div class="product">
+                                <h2>name of product</h2>
+                                <img class="align-self-center mr-3" src="./css/image/200.jpg">
+                                <h3>giá: 400$</h3>
+                                <h5>còn lại: 123</h5>
+                                <h6>đã bán: 12</h6>
+                                <a href="" class="btn btn-outline-warning">sửa</a>
+                                <a href="change.html" class="btn btn-outline-danger delete">xóa</a>
+                            </div>
+                            <div class="product">
+                                <h2>name of product</h2>
+                                <img class="align-self-center mr-3" src="./css/image/200.jpg">
+                                <h3>giá: 400$</h3>
+                                <h5>còn lại: 123</h5>
+                                <h6>đã bán: 12</h6>
+                                <a href="" class="btn btn-outline-warning">sửa</a>
+                                <a href="change.html" class="btn btn-outline-danger delete">xóa</a>
+                            </div>
+                            <div class="product">
+                                <h2>name of product</h2>
+                                <img class="align-self-center mr-3" src="./css/image/200.jpg">
+                                <h3>giá: 400$</h3>
+                                <h5>còn lại: 123</h5>
+                                <h6>đã bán: 12</h6>
+                                <a href="" class="btn btn-outline-warning">sửa</a>
+                                <a href="change.html" class="btn btn-outline-danger delete">xóa</a>
+                            </div>
+                            <!-- <div class="product">
+                                <h2>name of product</h2>
+                                <img class="align-self-center mr-3" src="./css/image/200.jpg">
+                                <h3>giá: 400$</h3>
+                                <h5>còn lại: 123</h5>
+                                <h6>đã bán: 12</h6>
+                                <a href="" class="btn btn-outline-warning">sửa</a>
+                                <a href="change.html" class="btn btn-outline-danger delete">xóa</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center" style="margin-left: 205px">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <a class="on_top" href="#"><i class="fa-arrow-circle-up fa"></i></a>
+</body>
+
+</html>
